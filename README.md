@@ -1,7 +1,7 @@
 # ⛏️ diwaznV2 — Minecraft Vencord Theme
 
 <p align="center">
-  <img src="preview.gif" width="900" alt="diwaznV2 Minecraft Theme Preview">
+  <img src="https://i.imgur.com/Ctqoou7.png" width="900" alt="diwaznV2 Main Interface">
 </p>
 
 <h1 align="center">🟩 diwaznV2</h1>
@@ -22,64 +22,64 @@
 
 ## 🌿 About
 
-Welcome to **diwaznV2**, a Minecraft-inspired custom theme for Vencord.
+**diwaznV2** is a Minecraft-inspired custom theme for Vencord, created by **diwazn**.
 
-Created by **diwazn**, this theme brings the atmosphere of Minecraft into Discord, combining a distinctive visual identity with a customized interface.
-
-Explore a different Discord experience inspired by the world of Minecraft.
+Transform your standard Discord interface into a unique Minecraft-inspired experience.
 
 ## 🧱 Features
 
 - 🌳 Minecraft-inspired aesthetic
 - 🟩 Custom color palette
-- ⛏️ Unique visual identity
-- 💎 Custom Discord styling
-- 🌌 Immersive atmosphere
+- 👤 Redesigned profile layouts
+- 💬 Custom Discord interface
+- ✨ Unique visual styling
 - 🎨 Custom CSS design
 
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="screenshots/main.png" width="850" alt="Main interface">
-  <br>
-  <i>Main interface</i>
-</p>
+### Main Interface
 
 <p align="center">
-  <img src="screenshots/profiles.png" width="850" alt="Profile interface">
-  <br>
-  <i>Custom profiles</i>
+  <img src="https://i.imgur.com/Ctqoou7.png" width="900" alt="Main Interface">
 </p>
+
+### Custom Profiles
+
+<p align="center">
+  <img src="https://i.imgur.com/TNO24Qd.png" width="900" alt="Custom Profile Design">
+</p>
+
+---
 
 ## 📥 Installation
 
 1. Install [Vencord](https://vencord.dev/).
-2. Download the `diwaznV2.theme.css` file.
+2. Download `diwaznV2.theme.css`.
 3. Open Discord settings.
 4. Navigate to **Vencord → Themes**.
-5. Import your CSS file.
+5. Import the CSS file.
 6. Enable **diwaznV2**.
 
 ## 👨‍💻 Creator
 
 <p align="center">
-  <strong>diwazn</strong>
+  <strong>DIWAZN</strong>
   <br>
   Creator & Developer of diwaznV2.
   <br>
-  Made with creativity and passion.
+  Designed with creativity and passion.
 </p>
 
 ---
 
 <p align="center">
-  ⛏️ **diwaznV2**
+  ⛏️ <strong>diwaznV2</strong>
   <br>
-  Created by **diwazn**
+  Created by <strong>diwazn</strong>
   <br>
   © 2026 diwazn
   <br><br>
-  ⭐ If you like this theme, consider starring the repository!
+  ⭐ Star this repository if you enjoy the theme!
 </p>
 
 <p align="center">
