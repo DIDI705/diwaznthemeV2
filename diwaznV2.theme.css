@@ -1,0 +1,176 @@
+/**
+ * @name Minecraft Classic & UI
+ * @author Diwazn
+ * @version 1.0.0
+ * @description Un thème Vencord rétro inspiré de l'interface de Minecraft (Blocs, menus en pierre et police pixel).
+ */
+
+/* Import de la police pixelisée de Minecraft (Press Start 2P) et police classique */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+    --mc-stone: #3c3c3c;
+    --mc-dark-stone: #212121;
+    --mc-light-stone: #555555;
+    --mc-border: #141414;
+    --mc-green-xp: #55ff55;
+    --mc-gold: #ffaa00;
+    --mc-white: #ffffff;
+    
+    --font-primary: 'VT323', monospace;
+    --font-display: 'Press Start 2P', monospace;
+}
+
+/* =========================================================
+   1. ÉCRAN DE DÉMARRAGE (MOJANG / CHARGEMENT MINECRAFT)
+   ========================================================= */
+#app-mount::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #8c7853; /* Couleur bois/terre des menus de chargement */
+    background-image: repeating-conic-gradient(#7c6843 0% 25%, #8c7853 0% 50%);
+    background-size: 32px 32px;
+    z-index: 999999;
+    animation: hideSplash 0.4s ease 2.5s forwards;
+}
+
+#app-mount::after {
+    content: "MINECRAFT\a\aChargement des mondes et des chunks...\aGénération du terrain...\aPatientez un instant...";
+    white-space: pre;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: var(--mc-green-xp);
+    font-family: var(--font-primary);
+    font-size: 20px;
+    border: 4px solid var(--mc-border);
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    z-index: 1000000;
+    text-align: center;
+    animation: hideSplash 0.4s ease 2.5s forwards;
+}
+
+@keyframes hideSplash {
+    to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+/* =========================================================
+   2. FOND DE BUREAU (TEXTURE DE PIERRE OU TERRE)
+   ========================================================= */
+body, html, [class*="appMount_"] {
+    background-color: #1a1a1a !important;
+    font-family: var(--font-primary) !important;
+}
+
+/* Fenêtre principale avec bordures massives de style Minecraft */
+[class*="app_"] {
+    background-color: var(--mc-dark-stone) !important;
+    border: 4px solid var(--mc-border);
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.7);
+    margin: 8px;
+    height: calc(100vh - 16px) !important;
+    width: calc(100vw - 16px) !important;
+}
+
+/* =========================================================
+   3. BARRE DE TITRE DE LA FENÊTRE
+   ========================================================= */
+[class*="typeWindows_"] {
+    background-color: #111111 !important;
+    border-bottom: 3px solid var(--mc-border) !important;
+    padding: 4px 8px !important;
+    height: 30px !important;
+}
+
+[class*="typeWindows_"]::before {
+    content: "Minecraft - Serveur Discord v1.20";
+    color: var(--mc-white);
+    font-family: var(--font-display);
+    font-size: 9px;
+    line-height: 22px;
+}
+
+/* =========================================================
+   4. LISTES, SALONS & PANNEAUX (Style Inventaire / Menu)
+   ========================================================= */
+
+/* Panneaux latéraux (Couleur pierre des menus de coffre/craft) */
+[class*="sidebar_"], [class*="privateChannels_"], [class*="panels_"] {
+    background-color: var(--mc-stone) !important;
+    border-right: 4px solid var(--mc-border) !important;
+}
+
+/* Textes des salons */
+[class*="channel_"], [class*="name_"], [class*="link_"], [class*="channelName_"] {
+    color: var(--mc-white) !important;
+    font-family: var(--font-primary) !important;
+    font-size: 18px !important;
+}
+
+/* Salon actif (Surlignage en or style sélection Minecraft) */
+[class*="modeSelected_"] [class*="link_"] {
+    background-color: #505050 !important;
+    border: 2px solid var(--mc-gold) !important;
+    color: var(--mc-gold) !important;
+}
+
+/* =========================================================
+   5. TCHAT ET ZONE DE DISCUSSION
+   ========================================================= */
+
+[class*="chat_"], [class*="chatContent_"], [class*="messagesWrapper_"] {
+    background-color: #181818 !important;
+}
+
+/* Messages du tchat */
+[class*="messageContent_"], [class*="markup_"] {
+    color: var(--mc-white) !important;
+    font-family: var(--font-primary) !important;
+    font-size: 18px !important;
+}
+
+[class*="username_"] {
+    color: var(--mc-green-xp) !important;
+    font-family: var(--font-primary) !important;
+    font-size: 18px !important;
+}
+
+/* Champ de saisie de texte (Boîte de dialogue de commande / tchat en jeu) */
+[class*="scrollableContainer_"], [class*="channelTextArea_"] {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border: 3px solid var(--mc-light-stone) !important;
+}
+
+/* =========================================================
+   6. BOUTONS STYLE BLOCS DE PIERRE
+   ========================================================= */
+button, [class*="button_"] {
+    background-color: var(--mc-stone) !important;
+    color: var(--mc-white) !important;
+    border-top: 3px solid var(--mc-light-stone) !important;
+    border-left: 3px solid var(--mc-light-stone) !important;
+    border-right: 3px solid var(--mc-border) !important;
+    border-bottom: 3px solid var(--mc-border) !important;
+    font-family: var(--font-primary) !important;
+    font-size: 16px !important;
+}
+
+button:active {
+    border-top: 3px solid var(--mc-border) !important;
+    border-left: 3px solid var(--mc-border) !important;
+    border-right: 3px solid var(--mc-light-stone) !important;
+    border-bottom: 3px solid var(--mc-light-stone) !important;
+}
+
+/* Désactivation des arrondis (le monde de Minecraft est fait de carrés !) */
+*, ::before, ::after {
+    border-radius: 0px !important;
+}
