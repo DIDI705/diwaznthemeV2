@@ -1,7 +1,7 @@
 # ⛏️ diwaznV2 — Minecraft Vencord Theme
 
 <p align="center">
-  <img src="https://i.imgur.com/Ctqoou7.png" width="900" alt="diwaznV2 Main Interface">
+  <img src=" width="900" alt="diwaznV2 Main Interface">
 </p>
 
 <h1 align="center">🟩 diwaznV2</h1>
